@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lesson Sign-Up Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style_book.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="giphy4.gif" alt="Logo" style="max-height:40px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" style="color:aliceblue;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:aliceblue;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:aliceblue;">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color:aliceblue;">Courses</a>
+        </li>
+      </ul>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color:aliceblue; border-color: azure;">Log In</button>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Sign Up for a Lesson</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="surname">Surname:</label>
+        <input type="text" class="form-control" id="surname" name="surname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="lecture">Type of Lecture:</label>
+        <select class="form-control" id="lecture" name="lecture" required>
+          <option value="NoSQL: Database Management">NoSQL: Database Management</option>
+          <option value="Algorithms and Data structures">Algorithms and Data structures</option>
+          <option value="Discrete Mathematics">Discrete Mathematics</option>
+          <option value="Machine Learning">Machine Learning</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" name="message"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price Range</label>
+        <input type="range" class="form-control-range" id="price" name="price" min="0" max="1000" value="500">
+        <small class="form-text text-muted">Price Range: From $0 to $1000</small>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <footer>
+    <div class="footer-links">
+      <a href="#aboutus">About Us</a>
+      <a href="https://policies.google.com/terms?hl=ru">Terms of use</a>
+      <a href="https://policies.google.com/privacy?hl=ru">Privacy policy</a>
+      <a href="https://t.me/ToreBiken">Contacts</a>
+    </div>
+    <div class="footer-text">
+      <p>&copy; 2023 All rights reserved.</p>
+    </div>
+    </footer>
+</body>
+</html>
